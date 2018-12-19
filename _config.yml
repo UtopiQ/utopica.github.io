@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: {{ t Utopica}}
+title: Utopica
 
 # Short description of your site
-description: {{ t Connect your passions and change the world }}
+description: Connect your passions and change the world
 
 # --- Navigation bar options --- #
 
@@ -65,7 +65,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: utopica
+  name: Utopica
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -209,39 +209,38 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: {{ t Post title }}
-          placeholder: {{ t My post }}
+          label: Post title
+          placeholder: My post
           alterable: true
       - name: "subtitle"
         field:
           element: "textarea"
-          label: {{ t Subtitle }}
-          placeholder: {{ t A description of the post }}
+          label: Subtitle
+          placeholder: A description of the post
           alterable: true
       - name: "date"
         field:
           element: "text"
-          label: {{ t Date }}
-          help: {{ t Enter the publishing date }}
+          label: Date
+          help: Enter the publishing date
           placeholder: "yyyy-mm-dd"
           alterable: true
       - name: "image"
         field:
           element: "text"
-          label: {{ t Image }}
-          help: {{ t Add a thumbnail image to the post }}
-          placeholder: {{ t Thumbnail }}
+          label: Image
+          help: Add a thumbnail image to the post
+          placeholder: Thumbnail
           alterable: true
       - name: "published"
         field:
           element: "checkbox"
-          label: {{ t Publish }}
-          help: {{ t Check to publish, uncheck to hide }}
+          label: Publish
+          help: Check to publish, uncheck to hide
 
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-i18n
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
