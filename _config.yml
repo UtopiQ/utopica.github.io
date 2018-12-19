@@ -14,17 +14,17 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Utopica
+title: {{ Utopica }}
 
 # Short description of your site
-description: Connecte tes passions et change le monde
+description: {{ t Connect your passions and change the world}}
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  Bienvenue: "index"
-  A propos: "about"
+  {{ Welcome }}: "index"
+  {{ About }}: "about"
   #Resources:
    # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     #- Learn markdown: "http://www.markdowntutorial.com/"
@@ -65,7 +65,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: utopica
+  name: {{ t Utopica }}
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -209,34 +209,34 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "Post title"
-          placeholder: "Title"
+          label: {{ t Post title }}
+          placeholder: {{ t Title }}
           alterable: true
       - name: "subtitle"
         field:
           element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
+          label: {{ t Subtitle}}
+          placeholder: {{ t A description of the post }}
           alterable: true
       - name: "date"
         field:
           element: "text"
-          label: "Date"
-          help: "Enter date of post."
+          label: {{ t Date }}
+          help: {{ t Enter the publishing date }}
           placeholder: "yyyy-mm-dd"
           alterable: true
       - name: "image"
         field:
           element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
+          label: {{ t Image }}
+          help: {{ t Add a thumbnail image to the post }}
+          placeholder: {{ t Thumbnail }}
           alterable: true
       - name: "published"
         field:
           element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+          label: {{ t Publish }}
+          help: {{ t Check to publish, uncheck to hide}}
 
 plugins:
   - jekyll-paginate
