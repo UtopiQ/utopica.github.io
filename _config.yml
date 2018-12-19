@@ -14,17 +14,17 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: {{ t Utopica }}
+title: {{ t Utopica}}
 
 # Short description of your site
-description: {{ t Connect your passions and change the world}}
+description: {{ t Connect your passions and change the world }}
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  {{ t Welcome }}: "index"
-  {{ t About }}: "about"
+  Bienvenue: "index"
+  About: "about"
   #Resources:
    # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     #- Learn markdown: "http://www.markdowntutorial.com/"
@@ -209,13 +209,13 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "Post title"
-          placeholder: {}
+          label: {{ t Post title }}
+          placeholder: {{ t My post }}
           alterable: true
       - name: "subtitle"
         field:
           element: "textarea"
-          label: {{ t Subtitle}}
+          label: {{ t Subtitle }}
           placeholder: {{ t A description of the post }}
           alterable: true
       - name: "date"
@@ -236,11 +236,12 @@ prose:
         field:
           element: "checkbox"
           label: {{ t Publish }}
-          help: {{ t Check to publish, uncheck to hide}}
+          help: {{ t Check to publish, uncheck to hide }}
 
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-i18n
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
