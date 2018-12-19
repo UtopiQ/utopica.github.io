@@ -75,7 +75,7 @@ social-network-links:
   rss: true
 #  email: "someone@example.com"
 #  facebook: daattali
-  github: https://github.com/Utopica
+  github: "https://github.com/Utopica"
 #  twitter: daattali
 #  reddit: yourname
 #  google-plus: +DeanAttali
