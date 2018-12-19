@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: {{ Utopica }}
+title: {{ t Utopica }}
 
 # Short description of your site
 description: {{ t Connect your passions and change the world}}
@@ -23,8 +23,8 @@ description: {{ t Connect your passions and change the world}}
 
 # List of links in the navigation bar
 navbar-links:
-  {{ Welcome }}: "index"
-  {{ About }}: "about"
+  {{ t Welcome }}: "index"
+  {{ t About }}: "about"
   #Resources:
    # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     #- Learn markdown: "http://www.markdowntutorial.com/"
@@ -65,7 +65,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: {{ t Utopica }}
+  name: utopica
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -209,8 +209,8 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: {{ t Post title }}
-          placeholder: {{ t Title }}
+          label: "Post title"
+          placeholder: {}
           alterable: true
       - name: "subtitle"
         field:
