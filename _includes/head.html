@@ -8,7 +8,7 @@
   <meta name="author" content="{{ site.author.name }}" />
 
   {% if page.subtitle %}
-  <meta name="description" content="{{ page.subtitle }}">
+    <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -55,47 +55,41 @@
 
     <!-- Facebook OpenGraph tags -->
   {% if site.fb_app_id %}
-  <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
+    <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
   {% endif %}
 
+  <!-- Meta -->
   {% if page.meta-title %}
-  <meta property="og:title" content="{{ page.meta-title }}" />
+    <meta property="og:title" content="{{ page.meta-title }}" />
   {% elsif page.title %}
-  <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ page.title }}" />
   {% else %}
-  <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:title" content="{{ site.title }}" />
   {% endif %}
 
-   {% if page.meta-description %}
-  <meta property="og:description" content="{{ page.meta-description }}">
+  {% if page.meta-description %}
+    <meta property="og:description" content="{{ page.meta-description }}">
   {% elsif page.subtitle %}
-  <meta property="og:description" content="{{ page.subtitle }}">
+    <meta property="og:description" content="{{ page.subtitle }}">
   {% else %}
-  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
+    <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
   {% endif %}
-
 
   <meta property="og:type" content="website" />
 
   {% if page.id %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   {% else %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
 
   {% if page.share-img %}
-  <meta property="og:image" content="{{ page.share-img }}" />
+    <meta property="og:image" content="{{ page.share-img }}" />
   {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+    <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
-
-
-  <!-- Twitter summary cards -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@{{ site.author.twitter }}" />
-  <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
 
   {% if page.meta-title %}
   <meta name="twitter:title" content="{{ page.meta-title }}" />
@@ -120,7 +114,11 @@
   {% endif %}
 
   {% if site.matomo %}
-  {% include matomo.html %}
+    {% include matomo.html %}
   {% endif %}
 
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ site.author.twitter }}" />
+  <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
 </head>
