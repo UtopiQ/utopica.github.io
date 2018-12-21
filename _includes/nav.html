@@ -7,11 +7,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/></a>
+      {% if site.call-url %}
+        <a  class="navbar-brand" href="{{ site.call-url }}">{{ site.call-label }}</a>
       {% else %}
-        <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
+        {% if site.title-img %}
+          <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/></a>
+        {% else %}
+          {% if page.url != "/" or site.title-on-home %}
+            <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
+          {% endif %}
+        {% endif %}
       {% endif %}
+
+
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
