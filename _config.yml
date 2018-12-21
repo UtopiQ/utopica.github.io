@@ -17,7 +17,7 @@ baseurl: ""
 title: Utopica
 
 # Short description of your site
-description: Connecte tes passions et change le monde
+description: Connect your passions and change the world
 
 # --- Navigation bar options --- #
 
@@ -26,6 +26,7 @@ navbar-links:
   Bienvenue: "index"
   Utopies: "posts"
   A propos: "about"
+
   #Resources:
    # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     #- Learn markdown: "http://www.markdowntutorial.com/"
@@ -74,7 +75,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: utopica
+  name: Utopica
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -219,34 +220,34 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "Post title"
-          placeholder: "Title"
+          label: Post title
+          placeholder: My post
           alterable: true
       - name: "subtitle"
         field:
           element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
+          label: Subtitle
+          placeholder: A description of the post
           alterable: true
       - name: "date"
         field:
           element: "text"
-          label: "Date"
-          help: "Enter date of post."
+          label: Date
+          help: Enter the publishing date
           placeholder: "yyyy-mm-dd"
           alterable: true
       - name: "image"
         field:
           element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
+          label: Image
+          help: Add a thumbnail image to the post
+          placeholder: Thumbnail
           alterable: true
       - name: "published"
         field:
           element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+          label: Publish
+          help: Check to publish, uncheck to hide
 
 plugins:
   - jekyll-paginate
