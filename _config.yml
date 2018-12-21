@@ -24,6 +24,7 @@ description: Connecte tes passions et change le monde
 # List of links in the navigation bar
 navbar-links:
   Bienvenue: "index"
+  Utopies: "posts"
   A propos: "about"
   #Resources:
    # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
@@ -33,11 +34,19 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/logo_v2.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
 # title-img: /path/to/image
+
+# If you want to hide the title in the navbar turn it to false
+show-nav-title: true
+# If you want to display a call to action instead of the title or logo
+call-url: /about # or null
+call-label: Participer
+call-color: FFD42A
+
 
 # --- Background colour/image options --- #
 
@@ -46,7 +55,7 @@ avatar: "/img/avatar-icon.png"
 navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
-page-col: "#FFFFFF"
+page-col: "#ffe699"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#F5F5F5"
@@ -151,6 +160,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+paginate_path: "/posts/page:num/"
 
 kramdown:
   input: GFM
